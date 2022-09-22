@@ -57,7 +57,6 @@
     display: grid;
     grid-template-columns: 1.2fr 0.3fr;
     grid-template-rows: 0.5fr 1fr;
-    align-items: center;
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -69,11 +68,22 @@
     gap: 1rem;
   }
 
+  .search-container input {
+    display: flex;
+    flex: 1;
+    padding-right: 10rem;
+    border-radius: 1rem;
+    border-style: solid
+  }
+
   .profile-container {
     grid-column: 2 / 3;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
+    margin-left: 22vw;
+    margin-right: 8vw;
   }
 
   .profile-picture {
