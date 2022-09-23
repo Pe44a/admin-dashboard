@@ -151,6 +151,7 @@
     grid-column: 2 / 3;
     grid-row: 3 / 5;
     display: grid;
+    padding: 1rem 2rem 1rem;
     grid-template-columns: 2.3fr 1fr;
     background-color: #c7d2fe;
   }
@@ -158,12 +159,14 @@
   .projects {
     grid-column: 1 / 2;
     display: grid;
-    grid-template-columns: repeat(auto-fit, min(450px, 100%));
-    grid-template-rows: repeat(auto-fit, 270px);
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
   }
 
-  projects div {
-    height: 300px;
+  .projects div {
+    background-color: white;
   }
 
   .announcements-trending {
