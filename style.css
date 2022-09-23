@@ -167,6 +167,8 @@
 
   .projects div {
     background-color: white;
+    border-left: 15px solid #3730a3;
+    border-radius: 0.7rem;
   }
 
   .announcements-trending {
