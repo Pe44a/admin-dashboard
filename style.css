@@ -4,7 +4,7 @@
   }
 
   body {
-    height: calc(100vh + 4em);
+    height: calc(100vh + 6em);
     width: 100vw;
     display: grid;
     grid-template-columns: 0.8fr 3fr;
@@ -82,8 +82,8 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 17vw;
+    margin-right: 3vw;
   }
 
   .profile-container p {
@@ -156,7 +156,12 @@
     background-color: #c7d2fe;
   }
 
-  .projects {
+  .main div {
+    padding: 1rem;
+    border-radius: 0.7rem;
+  }
+
+  .projects-container {
     grid-column: 1 / 2;
     display: grid;
     justify-content: center;
@@ -165,10 +170,13 @@
     grid-gap: 1rem;
   }
 
-  .projects div {
+  .projects-container div {
     background-color: white;
     border-left: 15px solid #3730a3;
-    border-radius: 0.7rem;
+  }
+
+  .project p {
+    font-size: smaller;
   }
 
   .announcements-trending {
