@@ -152,10 +152,18 @@
     grid-row: 3 / 5;
     display: grid;
     grid-template-columns: 2.3fr 1fr;
+    background-color: #c7d2fe;
   }
 
   .projects {
     grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min(450px, 100%));
+    grid-template-rows: repeat(auto-fit, 270px);
+  }
+
+  projects div {
+    height: 300px;
   }
 
   .announcements-trending {
