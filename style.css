@@ -147,6 +147,8 @@
 
 /* Main content */
 
+
+/* main */
   .main {
     grid-column: 2 / 3;
     grid-row: 3 / 5;
@@ -201,6 +203,9 @@
     width: 24px;
   }
 
+  /* announcements trending*/
   .announcements-trending {
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
   }
