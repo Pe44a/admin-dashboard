@@ -164,6 +164,10 @@
     border-radius: 0.7rem;
   }
 
+  .main p {
+    font-size: smaller;
+  }
+
   .projects-container {
     grid-column: 1 / 2;
     display: grid;
@@ -188,13 +192,13 @@
   }
 
   .project p {
-    font-size: smaller;
     margin: 4px 0 4px;
   }
 
   .actions {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
     gap: 10px;
   }
 
@@ -207,5 +211,38 @@
   .announcements-trending {
     grid-column: 2 / 3;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-gap: 2rem;
+    grid-template-rows: 0.7fr 0.7fr; 
+  }
+
+  .announcements-trending div {
+    background-color: white;
+  }
+
+  .announcements div {
+    padding: 0.5rem 0 0.5rem ;
+    margin: 0 0.5rem 0;
+    border-bottom: 2px solid grey;
+    border-radius: 0;
+  }
+
+  .announcements div {
+    padding: 0.5rem 0 0.5rem ;
+    margin: 0 0.5rem 0;
+    border-bottom: 2px solid grey;
+    border-radius: 0;
+  }
+
+  .announcements div:nth-child(3) {
+    padding: 0.5rem 0 0.5rem ;
+    margin: 0 0.5rem 0;
+    border-bottom: none;
+  }
+
+  .announcements h6{
+    margin: 0 0 1rem;
+  }
+
+  .announcements p {
+    margin: 0 0 0.2rem;
   }
