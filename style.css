@@ -153,11 +153,12 @@
     display: grid;
     padding: 1rem 2rem 1rem;
     grid-template-columns: 2.3fr 1fr;
+    grid-template-rows: 0.5fr;
     background-color: #c7d2fe;
   }
 
   .main div {
-    padding: 1rem;
+    padding: 0.7rem;
     border-radius: 0.7rem;
   }
 
@@ -170,13 +171,34 @@
     grid-gap: 1rem;
   }
 
-  .projects-container div {
+  .projects-container > div {
     background-color: white;
     border-left: 15px solid #3730a3;
   }
 
+  .project {
+    display: grid;
+    grid-template-rows: 3rf 1fr;
+  }
+
+  .project h4 {
+    margin: 10px 0 0;
+  }
+
   .project p {
     font-size: smaller;
+    margin: 4px 0 4px;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .actions img {
+    height: 24px;
+    width: 24px;
   }
 
   .announcements-trending {
