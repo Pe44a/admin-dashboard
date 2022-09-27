@@ -4,7 +4,7 @@
   }
 
   body {
-    height: calc(100vh + 12em);
+    height: calc(100vh + 20em);
     width: 100vw;
     display: grid;
     grid-template-columns: 0.8fr 3fr;
@@ -169,6 +169,11 @@
     color: rgb(96, 96, 96);
   }
 
+  .main h1 {
+    margin: 1rem 0.7rem 0.3rem;
+    font-size: 1.5rem;
+  }
+
   .projects-container {
     grid-column: 1 / 2;
     display: grid;
@@ -211,7 +216,6 @@
   /* announcements trending*/
   .announcements-trending {
     grid-column: 2 / 3;
-    display: grid;
     grid-gap: 2rem;
     grid-template-rows: 0.7fr 0.7fr; 
   }
@@ -246,6 +250,11 @@
 
   .announcements p {
     margin: 0 0 0.2rem;
+  }
+
+  .announcements {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
   }
 
   .trending {
