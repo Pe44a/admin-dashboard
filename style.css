@@ -173,8 +173,8 @@
     grid-column: 1 / 2;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 1rem;
   }
 
@@ -246,4 +246,34 @@
 
   .announcements p {
     margin: 0 0 0.2rem;
+  }
+
+  .trending {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trend {
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .trend img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    align-self: center;
+  }
+
+  .trend p {
+    margin: 0;
+  }
+
+  .trend p:nth-child(2) {
+    font-weight: 600;
+    color: black;
+  }
+
+  .user-name {
+    align-self: flex-end;
   }
